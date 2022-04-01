@@ -6,7 +6,7 @@ This is a basic still WIP framework for registering an account on an ircd using 
 
 ## Features
 
-- It relies on the WIP IRCv3.2 spec [draft/account-registration](https://github.com/ProgVal/ircv3-specifications/blob/register/extensions/account-registration.md)
+- It relies on the draft IRCv3 spec [draft/account-registration](https://ircv3.net/specs/extensions/account-registration.html)
 - It utilizes the flask framework and `WEBIRC` to relay remote host ip address.
 - Can be tweaked to allow registration attempts from exit-nodes and other unsavory hosts allowing them to securely work with the `require-sasl` constraint if needed.
 
