@@ -42,7 +42,7 @@ def ircregister(userip, username, password, email="*"):
     # but if the server responds with the corresponding FAIL we
     # need to try again. We can also handle email-required using
     # the same keys. How to access these key-value pairs?
-    # reference: https://github.com/ProgVal/ircv3-specifications/blob/register/extensions/account-registration.md#commands
+    # reference: https://ircv3.net/specs/extensions/account-registration.html
     
     # NICK and USER
     _send(irctokens.build("USER", ["u", "0", "*", username]))
