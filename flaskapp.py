@@ -33,6 +33,9 @@ def register():
             flash("Illegal Character in Username. Please choose a different one one.")
         elif response == "ERR_NICKNAMEINUSE":
             flash("Username already taken. Please choose a different one!")
+        elif response == "CAP_REFUSED":
+            flash("This IRCd doesn't support the draft/account-registration capability")
+            return redirect(webchat_url)
         elif response == "SUCCESS":
             return redirect(webchat_url)
         else:
