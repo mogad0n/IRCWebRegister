@@ -8,6 +8,10 @@ Deploy using nginx + uwsgi with an init system.
 
 ## Procedure
 
+### templates
+
+* Update the templates for `/register` and `/verify` paths.
+
 ### uwsgi commands and notes
 
 * `$ uwsgi -s /tmp/yourapplication.sock --manage-script-name --mount /yourapplication=myapp:app`
