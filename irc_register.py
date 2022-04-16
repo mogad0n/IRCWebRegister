@@ -59,7 +59,7 @@ def ircregister(userip, username, password, email="*"):
                 return "ERR_NICKNAMEINUSE"
             _send(irctokens.build("CAP", ["REQ", "draft/account-registration"]))
             if line.command == "CAP" and ("NAK" in line.params):
-                return "cap refused"
+                return "CAP_REFUSED"
             elif line.command == "CAP" and ("ACK" in line.params):
                 to_send = irctokens.build("CAP", ["END"])
                 _send(to_send)
